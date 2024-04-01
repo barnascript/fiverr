@@ -1,0 +1,308 @@
+.wrapper {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 200px;
+
+  .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+      }
+
+      .budget {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        input {
+          height: 30px;
+        }
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      position: relative;
+
+      .selected {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        font-weight: 700;
+        background-color: white;
+        border: 1px solid black;
+        padding: 0;
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        top: 30px;
+
+        span {
+          background-color: lightgray;
+          padding-left: 10px;
+          width: 100%;
+          padding-right: 10px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          cursor: pointer;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  .gigs {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+
+    .gig {
+      grid-column: span 3;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    padding-top: 120px;
+
+    .options {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        span {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          height: 100%;
+        }
+
+        .budget {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+          input {
+            height: 30px;
+          }
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        select {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          width: 150px;
+          font-weight: 700;
+          font-size: 0.8rem;
+          border: 1px solid black;
+          padding-inline: 10%;
+          outline: none;
+          cursor: pointer;
+          padding-right: 20px;
+
+          option {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .gigs {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 20px;
+
+      .gig {
+        grid-column: span 12;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 700px) {
+  .wrapper {
+    padding-top: 150px;
+
+    .options {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        span {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          height: 100%;
+        }
+
+        .budget {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+          input {
+            height: 30px;
+          }
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        select {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          width: 150px;
+          font-weight: 700;
+          font-size: 0.8rem;
+          border: 1px solid black;
+          padding-inline: 10%;
+          outline: none;
+          cursor: pointer;
+          padding-right: 20px;
+
+          option {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .gigs {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 20px;
+
+      .gig {
+        grid-column: span 6;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .wrapper {
+    padding-top: 150px;
+
+    .options {
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 40px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        span {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          height: 100%;
+        }
+
+        .budget {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 10px;
+          input {
+            height: 30px;
+          }
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        select {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          width: 150px;
+          font-weight: 700;
+          font-size: 0.8rem;
+          border: 1px solid black;
+          padding-inline: 10%;
+          outline: none;
+          cursor: pointer;
+          padding-right: 20px;
+
+          option {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .gigs {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 20px;
+
+      .gig {
+        grid-column: span 4;
+      }
+    }
+  }
+}

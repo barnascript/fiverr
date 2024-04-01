@@ -1,0 +1,116 @@
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  gap: 50px;
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+
+    .left,
+    .right {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+
+      .mobile_button {
+        display: none;
+      }
+
+      button {
+        background-color: rgb(36, 162, 36);
+        color: white;
+
+        &:hover {
+          background-color: green;
+        }
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        select {
+          height: 50px;
+        }
+        input,
+        textarea {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    gap: 50px;
+
+    form {
+      flex-direction: column;
+
+      .left,
+      .right {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+
+        .actual_button {
+          display: none;
+        }
+
+        .mobile_button {
+          display: block;
+        }
+
+        button {
+          background-color: rgb(36, 162, 36);
+          color: white;
+          width: 100%;
+          border: none;
+
+          &:hover {
+            background-color: green;
+          }
+        }
+
+        label {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 100%;
+
+          select {
+            height: 50px;
+          }
+          input,
+          textarea {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

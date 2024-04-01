@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+
+    .prev_arrow,
+    .next_arrow {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background: lightgray;
+      z-index: 4;
+      position: absolute;
+      z-index: 4;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    .next_arrow {
+      right: 0;
+    }
+  }
+}

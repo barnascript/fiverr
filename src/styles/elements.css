@@ -1,0 +1,90 @@
+button {
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-inline: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: var(--parsley);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+  color: unset;
+}
+
+input,
+textarea {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-inline: 16px;
+  font-size: 1rem;
+  border: 1px solid var(--black-fifty-opacity);
+  border-radius: 8px;
+  outline: none;
+}
+
+input {
+  height: 50px;
+}
+
+input:focus {
+  border: 1px solid black;
+}
+
+h1 {
+  font-size: clamp(3rem, 5vw, 6rem);
+  line-height: 1;
+}
+h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2;
+}
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+h4 {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+
+p {
+  line-height: 1.5;
+}
+
+ul,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+select {
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid black;
+  font-size: 1rem;
+}

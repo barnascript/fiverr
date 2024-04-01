@@ -1,0 +1,44 @@
+.wrapper {
+  background-color: var(--black-fourteen-opacity);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    opacity: 0.3;
+
+    img {
+      width: 70px;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    background-color: var(--black-fourteen-opacity);
+
+    .logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      opacity: 0.3;
+
+      b {
+        display: none;
+      }
+
+      img {
+        width: 60px;
+        height: auto;
+      }
+    }
+  }
+}

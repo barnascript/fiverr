@@ -1,0 +1,62 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .seller_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .passport {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+
+    .metadata {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .star {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      button {
+        font-size: 0.8rem;
+        padding: 4px;
+      }
+    }
+  }
+
+  .seller_condition {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      span {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    hr {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
